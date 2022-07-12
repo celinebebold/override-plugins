@@ -70,8 +70,8 @@ class Override_Plugins_Run{
 	*/
 	public function add_plugin_action_link( $links ) {
 
-		//$links['intructions'] = sprintf( '<a href="%s" target="_blank title="Instructions">%s</a>', 'https://override-plugins.ch/instructions', __( 'Instructions', 'override-plugins' ) );
-        array_unshift($links, sprintf( '<a href="%s" target="_blank title="Instructions">%s</a>', 'https://override-plugins.ch/instructions', __( 'Instructions', 'override-plugins' ) ));
+		//doesnt work//$links['intructions'] = sprintf( '<a href="%s" target="_blank title="Instructions">%s</a>', 'https://override-plugins.ch/instructions', __( 'Instructions', 'override-plugins' ) );
+        //works//array_unshift($links, sprintf( '<a href="%s" target="_blank title="Instructions">%s</a>', 'https://override-plugins.ch/instructions', __( 'Instructions', 'override-plugins' ) ));
 		
 		return $links;
 	}

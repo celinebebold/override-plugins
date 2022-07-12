@@ -4,13 +4,12 @@
  *
  * @package       OVERPLUG
  * @author        bebold
- * @version       1.0.2
+ * @version       1.0.4
  *
  * @wordpress-plugin
  * Plugin Name:   Override Any Plugin
- * Plugin URI:    https://override-plugins.ch
  * Description:   Allows to override any file from any plugin
- * Version:       1.0.2
+ * Version:       1.0.4
  * Author:        bebold
  * Author URI:    https://bebold.ch
  * Text Domain:   override-plugins
