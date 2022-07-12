@@ -56,12 +56,12 @@ function OVERPLUG() {
 
 OVERPLUG();
 
-if( ! class_exists( 'Smashing_Updater' ) ){
+if( ! class_exists( 'Plugin_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
 
 /* auto check update on github */
-$updater = new Smashing_Updater( __FILE__ );
+$updater = new Plugin_Updater( __FILE__ );
 $updater->set_username( 'celinebebold' );
 $updater->set_repository( 'override-plugins' );
 /*
