@@ -4,13 +4,13 @@
  *
  * @package       OVERPLUG
  * @author        bebold
- * @version       1.0.0
+ * @version       1.0.2
  *
  * @wordpress-plugin
  * Plugin Name:   Override Any Plugin
  * Plugin URI:    https://override-plugins.ch
  * Description:   Allows to override any file from any plugin
- * Version:       1.0.0
+ * Version:       1.0.2
  * Author:        bebold
  * Author URI:    https://bebold.ch
  * Text Domain:   override-plugins
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 define( 'OVERPLUG_NAME',			'Override Any Plugin' );
 
 // Plugin version
-define( 'OVERPLUG_VERSION',		'1.0.1' );
+define( 'OVERPLUG_VERSION',		'1.0.2' );
 
 // Plugin Root File
 define( 'OVERPLUG_PLUGIN_FILE',	__FILE__ );
@@ -55,3 +55,16 @@ function OVERPLUG() {
 }
 
 OVERPLUG();
+
+if( ! class_exists( 'Smashing_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+
+/* auto check update on github */
+$updater = new Smashing_Updater( __FILE__ );
+$updater->set_username( 'celinebebold' );
+$updater->set_repository( 'override-plugins' );
+/*
+	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+*/
+$updater->initialize();
