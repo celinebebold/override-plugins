@@ -1,7 +1,7 @@
 <?php
 /* auto check update on github */
 
-class Smashing_Updater {
+class Plugin_Updater {
 
 	private $file;
 
